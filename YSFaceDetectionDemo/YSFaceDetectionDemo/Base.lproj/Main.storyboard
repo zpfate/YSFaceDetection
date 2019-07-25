@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VYh-53-uJg">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2Kl-0P-PrC">
+            <objects>
+                <viewController id="VYh-53-uJg" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pAg-9J-KeQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xbe-ux-2L6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJH-bk-pWF">
+                                <rect key="frame" x="42" y="43" width="96" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="前/后置"/>
+                                <connections>
+                                    <action selector="changeCamera:" destination="VYh-53-uJg" eventType="touchUpInside" id="dBQ-qC-9SO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Ke-SK-9I1" firstAttribute="bottom" secondItem="xbe-ux-2L6" secondAttribute="bottom" id="5cV-uz-Klk"/>
+                            <constraint firstItem="xbe-ux-2L6" firstAttribute="top" secondItem="pAg-9J-KeQ" secondAttribute="top" id="Cmw-pj-m7i"/>
+                            <constraint firstItem="7Ke-SK-9I1" firstAttribute="trailing" secondItem="xbe-ux-2L6" secondAttribute="trailing" id="Sbh-0s-HBA"/>
+                            <constraint firstItem="xbe-ux-2L6" firstAttribute="leading" secondItem="7Ke-SK-9I1" secondAttribute="leading" id="YoH-ag-v3s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Ke-SK-9I1"/>
+                    </view>
+                    <connections>
+                        <outlet property="parentView" destination="xbe-ux-2L6" id="Eki-bM-bL9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sof-gr-vpl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="116.57608695652175"/>
+        </scene>
+    </scenes>
+</document>

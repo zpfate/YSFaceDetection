@@ -1,0 +1,15 @@
+Pod::Spec.new do |s|
+s.name         = "YSFaceDetection"
+s.version      = "1.0.0"
+s.summary      = "易时人脸iOS."
+s.description  = <<-DESC
+摄像头人脸识别与拍照上传
+DESC
+s.homepage     = "https://github.com/2360219637/CZCTestCode"
+s.license      = { :type => "MIT", :file => "LICENSE" }
+s.author             = { "陈志超" => "2360219637@qq.com" }
+s.platform     = :ios, "7.0"
+s.source       = { :git => "https://github.com/2360219637/CZCTestCode.git", :tag => s.version }
+s.source_files  = "Classes", "CZCTestCode/CZCTestCode/Classes/**/*.{h,m}"
+s.requires_arc = true
+end
